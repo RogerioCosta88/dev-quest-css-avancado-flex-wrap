@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Quest: Flex Wrap</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Flex Wrap</h1>
+
+    <section>
+        <h2>Wrap</h2>
+        <p>Primeiro devemos definir a <strong>div.pai</strong> como <strong>display: wrap</strong>, já que o <strong>flex-wrap</strong> é uma propriedade de <strong>flex-container</strong>, ou seja todos os estilos serão <em>definidos</em> na <strong>div.pai</strong>.</p>
+        <p>O <strong>flex-wrap</strong> define se os elementos irão <mark>quebrar</mark> <strong>wrap</strong> ou não <strong>nowrap</strong> no final do <em>container</em>. Então os <em>valores</em> do <strong>flex-wrap</strong> são: <strong><mark>nowrap</mark></strong> que é o <em>valor</em> padrão, <strong><mark>wrap</mark></strong> ou <strong><mark>wrap-reverse</mark></strong> que irá quebrar os elementos no final do <strong>container</strong> de forma inversa.</p>
+
+        <h2>nowrap</h2>
+        <div class="container nowrap">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+        </div>
+
+        <h2>wrap</h2>
+        <div class="container wrap">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+        </div>
+
+        <h2>wrap-reverse</h2>
+        <div class="container wrap-reverse">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+        </div>
+    </section>
+</body>
+</html>
